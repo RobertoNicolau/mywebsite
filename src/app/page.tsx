@@ -1,95 +1,81 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+import styles from "./page.module.css";
+import Link from "next/link";
+import { GithubLogo, InstagramLogo, LinkedinLogo } from "phosphor-react";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
+      <header className={styles.header}>
+        <div className={styles.social}>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            className={styles.socialLink}
+            href="https://github.com/RobertoNicolau"
             target="_blank"
-            rel="noopener noreferrer"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+            <GithubLogo size={32} />
+          </a>
+          <a
+            className={styles.socialLink}
+            href="https://www.linkedin.com/in/roberto-la-nicolau/"
+            target="_blank"
+          >
+            <LinkedinLogo size={32} />
+          </a>
+          <a
+            className={styles.socialLink}
+            href="https://instagram.com/roberto_la_nicolau"
+            target="_blank"
+          >
+            <InstagramLogo size={32} />
           </a>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+        <div className={styles.theme}>Powered By NextJs</div>
+      </header>
+      <div className={styles.description}>
+        <h1>Olá, visitante!</h1>
+        <p>
+          Meu nome é Roberto Nicolau, sou desenvolvedor web com foco em
+          front-end
+        </p>
       </div>
 
       <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <Link legacyBehavior href="/about">
+          <a className={styles.card} target="" rel="noopener noreferrer">
+            <h2>Sobre mim</h2>
+            <p>
+              Uma breve introdução sobre mim e como escolhi a área de tecnologia
+            </p>
+          </a>
+        </Link>
+        <Link legacyBehavior href="/about">
+          <a className={styles.card} target="" rel="noopener noreferrer">
+            <h2>Tecnologias</h2>
+            <p>
+              Uso ferramentas do ecossistema Javascript que me ajudam a
+              desenvolver sites modernos{" "}
+            </p>
+          </a>
+        </Link>
+        <Link legacyBehavior href="/about">
+          <a className={styles.card} target="" rel="noopener noreferrer">
+            <h2>Projetos</h2>
+            <p>
+              Alguns do sites que criei desde que iniciei na jornada de
+              programação{" "}
+            </p>
+          </a>
+        </Link>
+        <Link legacyBehavior href="/about">
+          <a className={styles.card} target="" rel="noopener noreferrer">
+            <h2>Experiência</h2>
+            <p>
+              Minha experiencia na área de tecnologia antes de ser desenvolvedor
+            </p>
+          </a>
+        </Link>
       </div>
     </main>
-  )
+  );
 }
