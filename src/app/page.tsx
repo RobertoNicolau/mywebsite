@@ -1,35 +1,12 @@
-"use client";
+import Social from "@/components/Social";
 import styles from "./page.module.css";
 import Link from "next/link";
-import { GithubLogo, InstagramLogo, LinkedinLogo } from "phosphor-react";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <header className={styles.header}>
-        <div className={styles.social}>
-          <a
-            className={styles.socialLink}
-            href="https://github.com/RobertoNicolau"
-            target="_blank"
-          >
-            <GithubLogo size={32} />
-          </a>
-          <a
-            className={styles.socialLink}
-            href="https://www.linkedin.com/in/roberto-la-nicolau/"
-            target="_blank"
-          >
-            <LinkedinLogo size={32} />
-          </a>
-          <a
-            className={styles.socialLink}
-            href="https://instagram.com/roberto_la_nicolau"
-            target="_blank"
-          >
-            <InstagramLogo size={32} />
-          </a>
-        </div>
+        <Social />
         <div className={styles.theme}>Powered By NextJs</div>
       </header>
       <div className={styles.description}>

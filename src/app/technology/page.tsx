@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import { ArrowLeft } from "phosphor-react";
 
-export default function Technology() {
+export default function About() {
   return (
     <>
       <Link href={"/"} legacyBehavior>

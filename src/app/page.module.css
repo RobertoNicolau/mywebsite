@@ -25,7 +25,6 @@
   background-size: 500% auto;
   animation: textShine 5s ease-in-out infinite alternate;
   font-style: normal;
-  font-weight: 800;
   letter-spacing: -4.72px;
   line-height: 7rem;
   text-align: center;
@@ -83,33 +82,6 @@
   max-width: var(--max-width);
 }
 
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.socialLink {
-  color: rgba(104, 106, 114, 0.973);
-  display: flex;
-  padding: 4px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  background-color: transparent;
-  transition: all 400ms ease;
-}
-.socialLink:hover {
-  background-color: rgba(104, 106, 114, 0.295);
-  border: 3px solid white;
-  box-shadow: 0px 0px 5.3px rgba(255, 255, 255, 0.069),
-    0px 0px 17.9px rgba(255, 255, 255, 0.101),
-    0px 0px 80px rgba(255, 255, 255, 0.17);
-  color: white;
-}
-
 .description {
   padding: 2rem 0;
   display: flex;
@@ -121,9 +93,9 @@
 }
 
 .description p {
-  opacity: 0.8;
+  font-weight: 100;
   font-size: 1.2rem;
-  line-height: 0.9;
+  line-height: 1.2;
   max-width: 45ch;
 }
 
@@ -149,6 +121,13 @@
 @media (max-width: 700px) {
   .main {
     justify-content: flex-start;
+  }
+  .description h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .description p {
+    max-width: 30ch;
   }
   .header {
     flex-direction: column;
