@@ -1,28 +1,36 @@
 "use client";
+import Nav from "@/components/Nav/page";
 import styles from "./page.module.css";
-import Link from "next/link";
-import { ArrowLeft } from "phosphor-react";
 
-export default function Technology() {
+export default function About() {
   return (
     <>
-      <Link href={"/"} legacyBehavior>
-        <a className={styles.back}>
-          <button>
-            <ArrowLeft size={32} />{" "}
-          </button>
-        </a>
-      </Link>
       <main className={styles.main}>
-        <div className={styles.description}>
-          <h1>Sobre Mim</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis
-            amet sunt vel ipsum nihil architecto suscipit at, non molestias
-            aspernatur accusamus fuga praesentium provident? Saepe aliquam esse
-            quae hic?
-          </p>
-        </div>
+        <section className={styles.about}>
+          <h1>Sobre mim</h1>
+          <div className={styles.description}>
+            <p>
+              Sou Roberto Nicolau, tenho 23 anos e moro em São José do Rio Preto
+              - SP
+            </p>
+            <br />
+            <p>
+              Desde pequeno sempre tive interesse pela área de tecnologia. Aos
+              14 anos tive meu primeiro contato com o mundo da programação, e
+              criei meu primeiro site usando as tecnologias que aprendi na época
+              (Adobe Flash Professional e Dreamweaver).
+            </p>
+            <br />
+
+            <p>
+              Anos depois quando comecei na faculdade de informática para
+              negócios em 2018 comecei a focar na programação e venho me
+              especializando nisso desde então.
+            </p>
+          </div>
+        </section>
+        <br />
+        <Nav />
       </main>
     </>
   );
