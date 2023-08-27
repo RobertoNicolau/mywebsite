@@ -1,6 +1,6 @@
-"use client";
-import Nav from "@/components/Nav/page";
-import styles from "./page.module.css";
+'use client'
+import Nav from '@/components/Nav/page'
+import styles from './page.module.css'
 
 export default function About() {
   return (
@@ -15,7 +15,7 @@ export default function About() {
             </p>
             <br />
             <p>
-              Desde pequeno sempre tive interesse pela área de tecnologia. Aos
+              Desde mais novo sempre tive interesse pela área de tecnologia. Aos
               14 anos tive meu primeiro contato com o mundo da programação, e
               criei meu primeiro site usando as tecnologias que aprendi na época
               (Adobe Flash Professional e Dreamweaver).
@@ -33,5 +33,5 @@ export default function About() {
         <Nav />
       </main>
     </>
-  );
+  )
 }

@@ -1,6 +1,7 @@
-import Social from "../components/Social/page";
-import styles from "./page.module.css";
-import Link from "next/link";
+import Social from '../components/Social/page'
+import styles from './page.module.css'
+import Link from 'next/link'
+import Contact from '@/components/Contact/page'
 
 export default function Home() {
   return (
@@ -8,12 +9,14 @@ export default function Home() {
       <main className={styles.main}>
         <header className={styles.header}>
           <Social />
-          <div className={styles.theme}>Powered By NextJs</div>
+          <div className={styles.theme}>
+            <Contact />
+          </div>
         </header>
         <div className={styles.description}>
           <h1>Olá, visitante!</h1>
           <p>
-            Meu nome é Roberto Nicolau, sou desenvolvedor web com foco em
+            Meu nome é Roberto Nicolau, sou desenvolvedor web especializado em
             front-end
           </p>
         </div>
@@ -42,7 +45,7 @@ export default function Home() {
               <h2>Tecnologias</h2>
               <p>
                 Uso ferramentas do ecossistema Javascript que me ajudam a
-                desenvolver sites modernos{" "}
+                desenvolver sites modernos{' '}
               </p>
             </a>
           </Link>
@@ -51,7 +54,7 @@ export default function Home() {
               <h2>Projetos</h2>
               <p>
                 Alguns do sites que criei desde que iniciei na jornada de
-                programação{" "}
+                programação{' '}
               </p>
             </a>
           </Link>
@@ -61,9 +64,9 @@ export default function Home() {
       <section className={styles.technologies}></section>
       <section className={styles.projects}></section>
       <section className={styles.experience}></section>
-      <section className={styles.footer}>
+      {/* <section className={styles.footer}>
         <p>© Roberto Nicolau</p>
-      </section>
+      </section> */}
     </>
-  );
+  )
 }
