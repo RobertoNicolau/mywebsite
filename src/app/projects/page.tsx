@@ -1,15 +1,15 @@
-"use client";
-import styles from "./page.module.css";
-import Link from "next/link";
-import { ArrowLeft } from "phosphor-react";
+'use client'
+import styles from './page.module.css'
+import Link from 'next/link'
+import { ArrowLeft } from 'phosphor-react'
 
 export default function Projects() {
   return (
     <>
-      <Link href={"/"} legacyBehavior>
+      <Link href={'/'} legacyBehavior>
         <a className={styles.back}>
           <button>
-            <ArrowLeft size={32} />{" "}
+            <ArrowLeft size={32} />{' '}
           </button>
         </a>
       </Link>
@@ -25,5 +25,5 @@ export default function Projects() {
         </div>
       </main>
     </>
-  );
+  )
 }

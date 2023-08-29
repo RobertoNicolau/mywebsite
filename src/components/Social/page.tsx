@@ -1,6 +1,6 @@
-"use client";
-import styles from "./page.module.css";
-import { GithubLogo, InstagramLogo, LinkedinLogo } from "phosphor-react";
+'use client'
+import styles from './page.module.css'
+import { GithubLogo, InstagramLogo, LinkedinLogo } from 'phosphor-react'
 
 export default function Social() {
   return (
@@ -27,5 +27,5 @@ export default function Social() {
         <InstagramLogo size={32} />
       </a>
     </div>
-  );
+  )
 }
