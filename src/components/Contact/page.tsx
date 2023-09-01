@@ -19,20 +19,38 @@ export default function Contact() {
           <Dialog.Title className={styles.DialogTitle}>
             Solicitar Projeto
           </Dialog.Title>
-          <Dialog.Description className="DialogDescription">
-            Projeto
+          <Dialog.Description className={styles.DialogDescription}>
+            Não gosta de formulários? Me mande um email:
           </Dialog.Description>
-          <fieldset className="Fieldset">
-            <label className="Label" htmlFor="name">
-              Name
+          <fieldset className={styles.Fieldset}>
+            <label className={styles.Label} htmlFor="name">
+              Nome
             </label>
-            <input className="Input" id="name" defaultValue="Pedro Duarte" />
+            <input
+              className={styles.Input}
+              id="name"
+              defaultValue="Roberto Nicolau"
+            />
           </fieldset>
-          <fieldset className="Fieldset">
-            <label className="Label" htmlFor="username">
+          <fieldset className={styles.Fieldset}>
+            <label className={styles.Label} htmlFor="company">
+              Empresa
+            </label>
+            <input
+              className={styles.Input}
+              id="company"
+              defaultValue="Your Company"
+            />
+          </fieldset>
+          <fieldset className={styles.Fieldset}>
+            <label className={styles.Label} htmlFor="username">
               Username
             </label>
-            <input className="Input" id="username" defaultValue="@peduarte" />
+            <input
+              className={styles.Input}
+              id="username"
+              defaultValue="@robertonicolau"
+            />
           </fieldset>
           <div
             style={{
